@@ -155,13 +155,11 @@
 /* ESERCIZIO 13 */
 
 .ex-13-button:hover .ex-13-top-white{
-  background-color: blue;
-  animation: girotondosopra 3s linear;
+  animation: girotondosopra 2s linear;
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
-  background-color: red;
-  animation: girotondosotto 3s linear;
+  animation: girotondosotto 2s linear;
 }
 
 @keyframes girotondosopra {
@@ -184,37 +182,26 @@
     top: -10px;
     left: -30px;
   }
-
-  100% {
-    top: -10px;
-    left:10%;
-  }
 }
 
 @keyframes girotondosotto {
   20% {
-    left: -30px;
+    right: calc(100% - 30px);
     top: calc(100% - 10px);
   }
 
   40% {
-    left: -30px;
+    right: calc(100% - 30px);
     top: -10px;
   }
 
   60% {
+    right: -30px;
     top: -10px;
-    left: calc(100% - 30px);
   }
 
   80% {
-    left: calc(100% - 30px);
+    right: -30px;
     top: calc(100% - 10px);
   }
-
-  100% {
-    left:calc(80% - 60px);
-    top: calc(100% - 10px)
-  }
-
 }
