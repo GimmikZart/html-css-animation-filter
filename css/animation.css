@@ -162,21 +162,66 @@
 /* ESERCIZIO 13 */
 
 .ex-13-button:hover .ex-13-top-white{
-  background-color: red;
   animation: girotondosopra 3s linear;
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
+  background-color: red;
   animation: girotondosotto 3s linear;
 }
 
 @keyframes girotondosopra {
-  25% {
+  20% {
     top:-10px;
     left: calc(100% - 30px);
   }
 
+  40% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
 
+  60% {
+    top: calc(100% - 10px);
+    left: -30px;
+  }
 
+  80% {
+    top: -10px;
+    left: -30px;
+  }
 
+  100% {
+    top: -10px;
+    left:10%;
+  }
+  }
+}
+
+@keyframes girotondosotto {
+  20% {
+    top:0;
+    left: -30px;
+  }
+
+  40% {
+    top: calc(100% - 10px);
+    left: calc(100% - 30px);
+  }
+
+  60% {
+    top: calc(100% - 10px);
+    left: -30px;
+  }
+
+  80% {
+    top: -10px;
+    left: -30px;
+  }
+
+  100% {
+    top: -10px;
+    left:10%;
+  }
+  }
 }
