@@ -1,0 +1,182 @@
+
+/* ESERCIZIO UNO */
+.ex-1-square {
+  transition: all 2s ease;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+/* ESERCIZIO DUE */
+
+.ex-2-square {
+  transition: all 2s ease;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* ESERCIZIO TRE */
+
+.ex-3-square {
+  transition: all 1s ease;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+/* ESERCIZIO 4 */
+
+.ex-4-square {
+  transition: all 1s ease;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/* ESERCIZIO 5 */
+
+.ex-5-square {
+  transition: all 1s ease;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+/* ESERCIZIO 6 */
+
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* ESERCIZIO 7 */
+
+.ex-7-img {
+  transition: all 2s ease;
+}
+
+.ex-7-img:hover {
+  filter:brightness(0.3);
+  filter: sepia(0.6);
+}
+
+/* ESERCIZIO 8 */
+
+.ex-8-img {
+  transition: all 2s ease;
+}
+
+.ex-8-img:hover {
+  filter:contrast(0.7);
+  filter: sepia(0.6);
+  border-radius: 20px;
+}
+
+/* ESERCIZIO 9 */
+
+.ex-9-img {
+  transition: all 2s ease;
+}
+
+.ex-9-img:hover {
+  filter:invert(0.6);
+  filter: sepia(0.6);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+/* ESERCIZIO 10 */
+
+.ex-10-icon {
+  animation: rotazione 1s linear infinite;
+}
+
+@keyframes rotazione {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+  /* ESERCIZIO 11 */
+
+.ex-11-icon:hover {
+  animation: rotazionedue 2s linear;
+  }
+
+@keyframes rotazionedue{
+  0% {
+    transform: rotate(0deg);
+  }
+
+  90% {
+    transform: rotate(300deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+  /* ESERCIZIO 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: muevelosopra 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: muevelosotto 2s linear;
+}
+
+@keyframes muevelosopra {
+
+  50% {
+    left: calc(100% - 60px)
+  }
+
+  100% {
+    left: none;
+  }
+}
+
+@keyframes muevelosotto {
+
+  50% {
+    right: calc(100% - 60px)
+  }
+
+  100% {
+    right: none;
+  }
+}
+
+
+/* ESERCIZIO 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+  background-color: red;
+  animation: girotondosopra 3s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: girotondosotto 3s linear;
+}
+
+@keyframes girotondosopra {
+  25% {
+    top:-10px;
+    left: calc(100% - 30px);
+  }
+
+
+
+
+}
